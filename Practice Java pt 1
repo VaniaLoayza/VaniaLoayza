@@ -1,0 +1,231 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello\nVania Loayza! ");
+  }
+}
+
+import java.util.Scanner;
+class Main{
+  public static void main(String[] args) {
+    Scanner input=new Scanner(System.in);
+    String str=input.nextline();
+    int count=0;
+    for(int i = 0; i < str.length(); i++) {
+      if(str.charAt(i) != '')
+      count++;
+    }
+  }
+}
+
+import java.util.Scanner;
+class Main
+{
+  public static void main(String []args) {
+    Scanner input= new Scanner(System.in);
+    System.out.println("Enter the author of the quote:");
+    String a = input.nextLine();
+    System.out.println("" + q + "\n" +a);
+  }
+}
+
+import java.util.Scanner;
+public class Main {
+  public static void main(String[]args) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("What is the first number?");
+    String firstNumber=sc.next();
+    System.out.println("What is the second number?");
+    String secondNumber=sc.next();
+    int convertedFirstNumber=Integer.parseint(firstNumber);
+    int convertedSecondNumber=integer.parseint(secondNumber);
+    int sum=convertFirstNumber+convertedSecondNumber;
+    int difference=convertedFirstNumber-convertedSecondNumber;
+    int multiplication= convertedFirstNumber*convertedSecondNumber;
+    int division=convertedFirstNumber/convertedSecondNumber;
+    System.out.println(convertedFirstNumber+"+"+ convertedSecondNumber+"+"+sum);
+    System.out.println(convertedFirstNumber+"-"+convertedSecondNumber+"="+difference);
+    System.out.println(convertedFirstNumber+"*"+convertedSecondNumber+"="+multiplication);
+    System.out.println(convertedFirstNumber+"/"+convertedSecondNumber+"="+division);
+  }
+}
+
+import java.util.Scanner;
+class Main {
+  public static void main(String []args) {
+    Scanner in=new Scanner(System.in);
+    int current year= calender;
+    System.out.print("what is your current age? ");
+    int age= in.nextint();
+    System.out.print("At what age would you like to retire? ");
+    int retire age= in.nextint();
+    int years left= retire age;
+    System.out.println("You have"+"Years left until you can retire");
+    int retire year= current year+years lefts;
+    System.out.println("Curent year +"" + retire year");
+  }
+}
+
+import java.util.Scanner;
+class Main {
+  public static void main(String []args) {
+    Scanner sc= new Scanner(System.in);
+    System.out.println("What is the length of the room in feet?");
+    double lenth=sc.nextDouble();
+    System.out.println("What is the width of the room in feet?");
+    double width= sc.nextDouble();
+    System.out.println("You entered dimension of"+"length+"by "+width+"feet");
+    double area=lenghth*width;
+    final double conversionFactor= are* 0.09290304;
+
+    System.out.println("The area is");
+    System.out.println(are+"square feet");
+    System.out.println(conversionFactor+"square meters");
+  }
+}
+
+import java.util.Scanner;
+class Main 
+{
+  public static void main(String[] args) {
+  Scanner s=new Scanner(System.in);
+ System.out.print("How many people? "); 
+ int people=s.nextInt();
+ System.out.print("How many pizzas do you have? ");
+ int pizzas=s.nextInt(); 
+ System.out.print("How many slices per pizza? ");
+ int slices=s.nextInt(); 
+ int total=slices*pizzas;
+  System.out.println(people+" people with "+pizzas+" pizzas ("+total+" slices)");
+        
+  if(total/people==1)
+    { 
+      System.out.println("Each person gets "+total/people+" piece of pizza.");
+      System.out.println("There are "+(total%people)+" leftover pieces.");
+        }
+        else 
+    {
+       System.out.println("Each person gets "+total/people+" pieces of pizza.");
+        System.out.println("There are "+(total%people)+" leftover pieces.");
+        }
+        
+        
+        }
+}
+
+import java.util.Scanner;
+public class Main
+{
+  public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in); 
+  double sqFeetPerGallon = 350;
+  System.out.print("Enter length: ");
+  double length = sc.nextDouble();
+  System.out.print("Enter width: ");
+  double width = sc.nextDouble(); 
+  double totalSq = length*width; 
+  int gallon = (int)Math.ceil(totalSq/sqFeetPerGallon); 
+  System.out.println("You will need to purchase "+gallon+" of paint to cover "+totalSq+" squre feet");
+ }
+}
+
+import java.util.Scanner;
+public class Main
+{
+   public static void main(String[] args) {
+   	Scanner sc = new Scanner(System.in); 
+   	System.out.print("Enter the price of item 1: ");
+   	double price_item1 = sc.nextDouble(); 
+   	System.out.print("Enter the quantity of item 1: ");
+   	int qty_item1 = sc.nextInt(); 
+   	System.out.print("Enter the price of item 2: ");
+   	double price_item2 = sc.nextDouble(); 
+   	System.out.print("Enter the quantity of item 2: ");
+   	int qty_item2 = sc.nextInt(); 
+   	System.out.print("Enter the price of item 3: ");
+   	double price_item3 = sc.nextDouble(); 
+   	System.out.print("Enter the quantity of item 3: ");
+   	int qty_item3 = sc.nextInt(); 
+   	double subTotal = (price_item1*qty_item1)+(price_item2*qty_item2)+(price_item3*qty_item3);
+   	double tax = (subTotal*5.5)/100; 
+   	double total = subTotal+tax;
+   	System.out.println("Subtotal: $"+subTotal); 
+   	System.out.println("Tax: $"+tax);
+   	System.out.println("Total: $"+total);
+   }
+}
+
+import java.util.Scanner;
+public class Main 
+{
+double currency;
+double rate;
+public void read()
+ {
+	System.out.print("How many euros are you exchanging? ");
+  Scanner sc = new Scanner(System.in);
+  this.currency = sc.nextDouble();
+  System.out.print("What is the exchange rate? ");
+  this.rate = sc.nextDouble();
+  }
+  public void print()
+  {
+  System.out.println(currency+" euros at an exchange rate of "+rate+" is");
+  double currencyConverted = currency*rate;
+  System.out.printf("%.2f U.S dollars.",currencyConverted);
+  }
+}
+public class Main{
+ public static void main(String args[])
+  {
+  CurrencyExchange ca = new CurrencyExchange();
+  ca.read();
+  ca.print();
+   	  
+   	  
+  }
+}
+
+import java.util.Scanner;
+
+public class CompoundInterest {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("What is the principal amount? ");
+        int principalAmount = input.nextInt();
+        System.out.print("What is the rate? ");
+        double rate = input.nextDouble();
+        System.out.print("What is the number of years? ");
+        int year = input.nextInt();
+        System.out.print("What is the number of times the interest is compounded per year? ");
+        int n = input.nextInt();
+        double A = principalAmount*Math.pow(1+((rate*0.01)/n),n*year);
+        System.out.printf("$%d invested at %.1f%% for %d years compounded %d times per year is $%.2f.\n", 
+       principalAmount, rate, year, n, A);
+
+        input.close();
+    }
+}
+
+import java.util.Scanner;
+public class TaxCalculator {
+    public static void main(String[] args) {
+      
+        Scanner input = new Scanner(System.in);
+        System.out.print("What is the order amount? ");
+        double orderAmount = input.nextDouble();
+        System.out.print("What is the state? ");
+        String state = input.next();
+        double tax;
+        if(state.equalsIgnoreCase("WI")) {
+          System.out.printf("The subtotal is $%.2f\n", orderAmount);
+          tax = 5.5/10;
+            System.out.printf("The tax is $%.2f\n", tax);
+        } else {
+            tax = 0;
+        }
+        double total = orderAmount + tax;
+        System.out.printf("The total is $%.2f\n", total);
+        input.close();
+    }
+}
